@@ -10,9 +10,16 @@ namespace _9185_question
     {
         static void Main(string[] args)
         {
-            Node<int> n = Arr2List(new int[] { 2, 9, -9, 4, -9, 3, 4, 5, -9 });
+            Node<int> n = Arr2List(new int[] { 92, 4, 543 });
 
-            Console.WriteLine(BuildDigit(n)); //92->4->543
+            Console.WriteLine(BuildDigit(n)); //2,9,-9,4,-9, 3, 4, 5, -9
+
+            //not part of the question - this does the reverse
+            n = Arr2List(new int[] { 2, 9, -9, 4, -9, 3, 4, 5, -9 });
+
+            Console.WriteLine(BuildDigit1(n)); //92->4->543
+
+
         }
 
         public static Node<T> Arr2List<T>(T[] arr)
@@ -31,6 +38,11 @@ namespace _9185_question
 
 
         static Node<int> BuildDigit(Node<int> lst)
+        {
+            return null;
+        }
+
+        static Node<int> BuildDigit1(Node<int> lst)
         {
             return null;
         }
